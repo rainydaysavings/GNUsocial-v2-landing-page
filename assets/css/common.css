@@ -1,49 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans&display=swap');
 
 body
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #fefdff;
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
     text-align: justify;
-    background-color: #E9EAED;
+    background-color:#DA3B26;
 }
 
-.subtitle
+h1
 {
-    font-family: 'Miriam Libre', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #A22430;
+}
+
+.emphasis
+{
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    float: initial;
+}
+
+.navs-left
+{
+    margin-top: 0;
+    padding: 0;
+}
+
+.navs-right
+{
+    float: right;
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
 }
 
 #top
 {
-    font-family: 'Miriam Libre', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+b
+{
+    color: #fefdff; 
 }
 
 a:link
 {
-    color: #A22430;
+    color: #5d576b;
     text-decoration: none;
 }
 a:visited
 {
-    color: #A22430;
+    color: #fefdff;
 }
 
 ul
 {
     display: inline;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logo
+{
+    margin-top: 10px;
+}
+
+#top
+{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
 }
 
 .alignleft
 {
+    margin-left: 10px;
     float: left;
 }
 
 .alignright
 {
     float: right;
-    margin-left: 30px;
+}
+
+.container
+{
+    position: relative;
+}
+
+section {
+	padding: 30px 0;
+	box-sizing: border-box;
+}
+
+.buttons {
+    float: center;
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+button 
+{
+	display: block;
+	position: relative;
+	padding: 25px 0;
+	margin: 25px auto;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #fefdff;
+	letter-spacing: 1px;
+	border: none;
+	cursor: pointer;
+	width: 270px;
+	outline: none;
+	overflow: hidden;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.btn-1 {
+	overflow: hidden;
+	background-color: transparent;
+	border: 1px solid #fefdff;
+	transition: all 0.3s ease;
+}
+.btn-1:hover {
+	background-color: #f1fffa50;
+	color: #fefdff;
+}
+.btn-1:active {
+	transform: scale(1.1)
 }

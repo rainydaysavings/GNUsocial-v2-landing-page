@@ -23,7 +23,9 @@ h1
 {
     writing-mode: sideways-lr;
     text-orientation: mixed;
-    float: initial;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0;
 }
 
 .navs-left
@@ -94,15 +96,21 @@ ul
 
 .container
 {
-    position: relative;
+    float: center;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+    text-align: justify;
 }
 
-section {
+section 
+{
 	padding: 30px 0;
 	box-sizing: border-box;
 }
 
-.buttons {
+.buttons 
+{
     float: center;
 	width: 30%;
 	height: 30%;
@@ -112,18 +120,21 @@ section {
 
 button 
 {
-	display: block;
+	display: inline-block;
 	position: relative;
 	padding: 25px 0;
-	margin: 25px auto;
+    margin: 25px auto;
+    margin-left: 20px;
     text-transform: uppercase;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 	text-align: center;
 	color: #fefdff;
 	letter-spacing: 1px;
 	border: none;
 	cursor: pointer;
-	width: 270px;
+	width: 250px;
 	outline: none;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -131,16 +142,20 @@ button
 	-webkit-box-sizing: border-box;
 }
 
-.btn-1 {
+.btn-1 
+{
 	overflow: hidden;
 	background-color: transparent;
-	border: 1px solid #fefdff;
+	border: 2px solid #fefdff;
 	transition: all 0.3s ease;
 }
-.btn-1:hover {
+
+.btn-1:hover 
+{
 	background-color: #f1fffa50;
 	color: #fefdff;
 }
-.btn-1:active {
+.btn-1:active 
+{
 	transform: scale(1.1)
 }

@@ -19,35 +19,6 @@ h1
     color: #A22430;
 }
 
-.emphasis
-{
-    writing-mode: sideways-lr;
-    text-orientation: mixed;
-    margin-top: 50px;
-    margin-left: 0;
-    padding: 0;
-}
-
-.navs-left
-{
-    margin-top: 0;
-    padding: 0;
-}
-
-.navs-right
-{
-    float: right;
-    margin-top: 0;
-    padding: 0;
-    text-align: right;
-}
-
-#top
-{
-    margin: 0;
-    padding: 0;
-}
-
 b
 {
     color: #fefdff; 
@@ -58,6 +29,7 @@ a:link
     color: #fefdff;
     text-decoration: none;
 }
+
 a:visited
 {
     color: #fefdff;
@@ -65,76 +37,81 @@ a:visited
 
 ul
 {
-    display: inline;
     list-style: none;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 }
 
-#logo
+
+/* CONTENT */
+.gnus
 {
-    margin-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-#top
+#container
 {
-    padding: 0;
-    margin: 0;
-    line-height: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.alignleft
+.sideways
 {
-    margin-left: 10px;
-    float: left;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    margin-top: 50px;
+    margin-left: 0;
+    font-size: 1em;
 }
 
-.alignright
+#center
 {
-    float: right;
+    margin-left: 3em;
+    margin-right: 3em;
+    flex: 0.6; /* Standard syntax */
 }
 
-.container
+#left
 {
-    float: center;
-	width: 50%;
-	height: 50%;
-	margin: 0 auto;
-    text-align: justify;
+    margin-left: 3em;
+    flex: 0.2; /* Standard syntax */
 }
 
+#right
+{
+    margin-right: 3em;
+    flex: 0.2; /* Standard syntax */
+    text-align: right;
+}
+
+/* BUTTON STUFF */
 section 
 {
 	padding: 30px 0;
-	box-sizing: border-box;
 }
 
 .buttons 
 {
-    float: center;
-	width: 30%;
-	height: 30%;
-	margin: 0 auto;
 	text-align: center;
 }
 
 button 
 {
-	display: inline-block;
-	position: relative;
-	padding: 25px 0;
-    margin: 25px auto;
-    margin-left: 20px;
+    padding: 1.3em 0;
+    margin-top: 3em;
+    margin-bottom: 0;
+    margin-left: 1em;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
 	text-align: center;
 	color: #fefdff;
 	letter-spacing: 1px;
 	border: none;
 	cursor: pointer;
-	width: 250px;
+	width: 15em;
 	outline: none;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -146,7 +123,7 @@ button
 {
 	overflow: hidden;
 	background-color: transparent;
-	border: 2px solid #fefdff;
+	border: 1px solid #fefdff;
 	transition: all 0.3s ease;
 }
 

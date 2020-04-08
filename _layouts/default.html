@@ -6,52 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GNU social - a free social networking platform</title>
     <link href="{{site.baseurl}}/assets/css/common.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="container">
+        <div id="left">
+            <h1 class="gnus"><a href="{{site.baseurl}}/index.html">GNU social</a></h1>
+            <nav class="navs-left"> 
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">Official Merch</a></li>
+                    <li><a href="">Logos</a></li>
+                </ul>
+            </nav>
+            <h2 class="sideways">_The <a href="">free/libre</a> software social networking platform</h2>
+        </div>
 
-    <div id="top">
-        <img src="{{site.baseurl}}/assets/imgs/logo.png" class="alignleft" id="logo" height="25em" width="auto">
-        <h1 class="alignleft"><a href="{{site.baseurl}}/index.html">GNU social</a></h1>
-        <h1 class="alignright"><a href="https://gnusocial.network/try/">_GNU</a></h1>
-        <div style="clear: both;"></div>
+        <div id="center">
+            {{content}}
+        </div>
+
+        <div id="right">
+            <h1 class="gnus"><a href="https://gnusocial.network/try/">_GNU</a></h1>
+            <nav class="navs-right">
+                <ul>
+                    <li><a href="">About GNU</a></li>
+                    <li><a href="">Philosophy</a></li>
+                    <li><a href="">Licenses</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Software</a></li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Help GNU</a></li>
+                    <li><b><a href="">JOIN THE FSF</a></li></b>
+                </ul>
+            </nav>
+            <div style="clear: both;"></div>
+        </div>
     </div>
-
-
-    <div class="navs-left alignleft">
-        <nav>
-            <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Donate</a></li>
-                <li><a href="">Official Merch</a></li>
-                <li><a href="">Logos</a></li>
-            </ul>
-        </nav>
-        <h2 class="emphasis">_The <a href="">free/libre</a> software social networking platform</h2>
-    </div>
-
-    <div class="navs-right alignright">
-        <nav>
-            <ul>
-                <li><a href="">About GNU</a></li>
-                <li><a href="">Philosophy</a></li>
-                <li><a href="">Licenses</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Software</a></li>
-                <li><a href="">Documentation</a></li>
-                <li><a href="">Help GNU</a></li>
-                <li><b><a href="">JOIN THE FSF</a></li></b>
-            </ul>
-        </nav>
-        <div style="clear: both;"></div>
-    </div>
-
-    <br>
-
-    {{content}}
-
 </body>
-
 </html>

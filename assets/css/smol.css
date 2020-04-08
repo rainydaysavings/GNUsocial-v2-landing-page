@@ -76,10 +76,12 @@ h3
 
 .center
 {
+    font-size: 0.9em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
-    width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
     order: 3;
 }
 
@@ -101,12 +103,13 @@ h3
     margin-left: auto;
     margin-right: auto;
     order: 4;
-    width: 80%;
+    width: 100%;
 }
 
 .emphasis
 {
     text-align: center;
+    font-size: 0.9em;
 }
 
 /* BUTTON STUFF */

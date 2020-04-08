@@ -6,7 +6,10 @@ body
     color: #fefdff;
     text-align: justify;
     background-color:#DA3B26;
-    margin-top: 5em;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-bottom: 3em;
 }
 
 h1
@@ -14,6 +17,8 @@ h1
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: #A22430;
+    font-size: 2em;
+    margin-top: 0;
 }
 
 b
@@ -39,6 +44,13 @@ ul
     padding: 0;
 }
 
+h3
+{
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 0em;
+}
+
 
 /* CONTENT */
 .gnus
@@ -50,7 +62,8 @@ ul
 .container
 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-direction: row;
 }
 
 .sideways
@@ -64,19 +77,19 @@ ul
 
 .center
 {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3em;
-    flex: 0.5; 
+    flex: 0.6; 
 }
 
 #left
 {
-    margin-left: 3em;
     flex: 0.2; 
 }
 
 #right
 {
-    margin-right: 3em;
     flex: 0.2; 
     text-align: right;
 }

@@ -79,21 +79,21 @@ h3
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
-    width: 50%;
-    order: 2;
+    width: 80%;
+    order: 3;
 }
 
 #social
 {
-    width: 25%;
+    width: 50%;
     order: 1;
 }
 
 #gnu
 {
-    width: 25%;
+    width: 50%;
     text-align: right;
-    order: 3;
+    order: 2;
 }
 
 #content
@@ -101,7 +101,7 @@ h3
     margin-left: auto;
     margin-right: auto;
     order: 4;
-    width: 60%;
+    width: 80%;
 }
 
 .emphasis

@@ -15,8 +15,8 @@ body
     color: #474350;
     text-align: justify;
     margin-top: 3em;
-    margin-right: 8em;
-    margin-left: 8em;
+    margin-right: 7em;
+    margin-left: 7em;
     margin-bottom: 3em;
 }
 
@@ -86,8 +86,8 @@ h3
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
-    width: 100%;
-    order: 3;
+    width: 50%;
+    order: 2;
 }
 
 .center a:link
@@ -102,15 +102,15 @@ h3
 
 #social
 {
-    width: 50%;
+    width: 25%;
     order: 1;
 }
 
 #gnu
 {
-    width: 50%;
+    width: 25%;
     text-align: right;
-    order: 2;
+    order: 3;
 }
 
 #content

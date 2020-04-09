@@ -11,6 +11,7 @@ html
 
 body
 {
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     color: #474350;
     text-align: justify;

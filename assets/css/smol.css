@@ -289,15 +289,11 @@ button
 {
     order: 5;
     margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 2em;
-    width: 80%;
+    width: 100%;
 }
   table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 40px rgba(216, 203, 223, 0.4);

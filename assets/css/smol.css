@@ -14,11 +14,12 @@ body
     font-family: 'Open Sans', sans-serif;
     color: #474350;
     text-align: justify;
-    margin-top: 5em;
-    margin-right: 5em;
-    margin-left: 5em;
-    margin-bottom: 5em;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
 }
+
 h1
 {
     font-family: 'Montserrat', sans-serif;
@@ -27,15 +28,20 @@ h1
     margin-top: 0;
 }
 
+input::-moz-focus-inner 
+{ 
+    border: 0; 
+}
 a:link
 {
     color: #474350;
     text-decoration: none;
+    outline: 0;
 }
-
 a:visited
 {
     color: #474350;
+    outline: 0;
 }
 
 h3
@@ -172,7 +178,7 @@ ul
 
 #content-left
 {
-    width: 45%;
+    width: 100%;
     align-self: flex-start;
     order: 5;
 }
@@ -188,17 +194,12 @@ ul
     font-weight: 900;
 }
 
-#content-left ul
-{
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
 #content-right
 {
+    margin-top: 2em;
     margin-left: auto;
     order: 6;
-    width: 45%;
+    width: 100%;
 }
 #content-right a:link
 {
@@ -273,6 +274,16 @@ button
 
 
 /* TABLE STUFF */
+#try
+{
+    order:5;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
 
 .instances 
 {
@@ -281,29 +292,29 @@ button
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    width: 100%;
+    width: 80%;
 }
   table {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(216, 203, 223, 0.4);
   }
   th,
   td {
     padding: 15px;
-    background-color: #F3EBEFEF;
+    background-color: rgba(243, 235, 239, 0.8);
   }
   th {
     text-align: left;
   }
   thead th {
-    background-color: #55608f;
+    background-color: rgba(216, 203, 223, 0.4);
   }
   tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.733);
+    background-color: rgba(125, 125, 125, 0.2);
   }
   tbody td {
     color: #474350;
@@ -320,3 +331,14 @@ button
     z-index: -1;
   }
   
+  .md
+  {
+      order: 4;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .md h1
+  {
+      margin-top: 2em;
+  }

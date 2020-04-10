@@ -4,8 +4,8 @@ Made as a proof of competence for GSoC 2020
 
 ## Features
 * News
---* Categories
---* Written in markdown
+  Categories
+  Written in markdown
 * Links to Documentation
 * Better organization of content
 * Modern design with pure CSS, no frameworks

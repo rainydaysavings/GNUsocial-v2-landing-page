@@ -14,12 +14,11 @@ body
     font-family: 'Open Sans', sans-serif;
     color: #474350;
     text-align: justify;
-    margin-top: 3em;
-    margin-right: 7em;
-    margin-left: 7em;
-    margin-bottom: 3em;
+    margin-top: 5em;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 5em;
 }
-
 h1
 {
     font-family: 'Montserrat', sans-serif;
@@ -39,18 +38,20 @@ a:visited
     color: #474350;
 }
 
-ul
-{
-    list-style: none;
-    margin-top: 0;
-    padding: 0;
-}
-
 h3
 {
     margin-bottom: 0;
     padding: 0;
-    line-height: 0.8em;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+ul
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 
@@ -60,80 +61,155 @@ h3
     margin-left: 0.2em;
 }
 
-.headers
-{
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
 .container
 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.sideways
+#sideways
 {
+    order: 3;
+    position: absolute;
     writing-mode: sideways-lr;
     text-orientation: mixed;
-    margin-top: 50px;
+    margin-top: 10em;
     margin-left: 0;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .center
 {
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
-    width: 50%;
-    order: 2;
+    margin-bottom: 2em;
+    width: 100%;
+    order: 4;
 }
-
 .center a:link
 {
     color: #44344f;
+    font-weight: 900;
 }
 
 .center a:visited
 {
     color: #44344f;
+    font-weight: 900;
 }
 
-#social
+.social
 {
-    width: 25%;
+    align-self: flex-start;
     order: 1;
 }
-
-#gnu
+.social ul li
 {
-    width: 25%;
-    text-align: right;
-    order: 3;
+    position: relative;
+}
+.social ul li ul a
+{
+    line-height: 1.8em;
+}
+.social ul li ul
+{
+    display: none;
+    position: absolute;
+    left: 10%;
+    background-color: #F3EBEFEF;
+    padding: 0.8em 1.5em 1.5em 1.5em;
+    border-radius: 4px;
+}
+.social ul li:hover ul
+{
+    display: block;
+}
+.social ul li ul a:hover
+{
+    opacity: 0.6;
+    transition: all 0.5s ease;
+}
+.hover-effect:hover
+{
+    opacity: 0.6;
+    transition: all 0.5s ease;
 }
 
-#content
+.gnu
 {
     margin-left: auto;
-    margin-right: auto;
-    order: 4;
-    width: 100%;
+    text-align: right;
+    order: 2;
 }
-#content a:link
+.gnu ul li
 {
-    color: #44344f;
+    position: relative;
+}
+.gnu ul li ul a
+{
+    line-height: 1.8em;
+}
+.gnu ul li a:hover
+{
+    opacity: 0.6;
+    transition: all 0.5s ease;
+}
+.gnu ul li ul
+{
+    display: none;
+    position: absolute;
+    right: 10%;
+    background-color: #F3EBEFEF;
+    padding: 0.8em 1.5em 1.5em 1.5em;
+    border-radius: 4px;
+}
+.gnu ul li:hover ul
+{
+    display: block;
 }
 
-#content a:visited
+
+#content-left
+{
+    width: 45%;
+    align-self: flex-start;
+    order: 5;
+}
+#content-left a:link
 {
     color: #44344f;
+    font-weight: 900;
 }
 
-#content ul
+#content-left a:visited
+{
+    color: #44344f;
+    font-weight: 900;
+}
+
+#content-left ul
 {
     margin-left: 1em;
     margin-right: 1em;
+}
+
+#content-right
+{
+    margin-left: auto;
+    order: 6;
+    width: 45%;
+}
+#content-right a:link
+{
+    color: #44344f;
+    font-weight: 900;
+}
+
+#content-right a:visited
+{
+    color: #44344f;
+    font-weight: 900;
 }
 
 .emphasis
@@ -156,9 +232,9 @@ section
 button 
 {
     padding: 1.3em 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    margin-left: 1em;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -187,10 +263,60 @@ button
 
 .btn-1:hover 
 {
-	background-color: #47435020;
+	background-color: rgba(216, 203, 223, 0.4);
 	color: #474350;
 }
 .btn-1:active 
 {
 	transform: scale(1.1)
 }
+
+
+/* TABLE STUFF */
+
+.instances 
+{
+    order: 5;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 100%;
+}
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  th,
+  td {
+    padding: 15px;
+    background-color: #F3EBEFEF;
+  }
+  th {
+    text-align: left;
+  }
+  thead th {
+    background-color: #55608f;
+  }
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.733);
+  }
+  tbody td {
+    color: #474350;
+    position: relative;
+  }
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+  

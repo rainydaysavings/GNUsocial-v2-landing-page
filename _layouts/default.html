@@ -13,48 +13,60 @@
 
 <body>
     <div class="container">
-        <div id="social">
-            <h1 class="headers"><img src="{{site.baseurl}}/assets/imgs/logo.png" height="30em"><a href="{{site.baseurl}}/index.html" id="logo-margin">GNU social</a></h1>
-            <nav class="navs-left"> 
-                <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Donate</a></li>
-                    <li><a href="">Official Merch</a></li>
-                    <li><a href="">Logos</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="social"> 
+            <ul>
+                <li>
+                    <a href="{{site.baseurl}}/index.html" class="hover-effect">
+                        <h1 style="display: inline;margin-right: 5px;"><img src="{{site.baseurl}}/assets/imgs/logo.png" height="25em" style="margin-right: 10px;">GNU social</h1>
+                        <h5 style="display: inline;">▼</h5>
+                    </a>
+                        <ul>
+                            <li><a href="{{site.baseurl}}/index.html">About</a></li>
+                            <li><a href="{{site.baseurl}}/news.html">News</a></li>
+                            <li><a href="">Documentation</a></li>
+                            <li><a href="https://notabug.org/diogo/gnu-social">Development</a></li>
+                        </ul> 
+                </li>
+            </ul>
+        </nav>
 
         <div class="center">
             <h3 class="emphasis">_The <a href="">free/libre</a> software social networking platform</h2>
             <section id="btns" class="aligncenter">
                 <div class="buttons">
-                    <button class="btn-1">INSTALL</button>
-                    <button class="btn-1">JOIN US</button>
+                    <a href="https://notabug.org/diogo/gnu-social/src/nightly/INSTALL.md">
+                        <button class="btn-1">INSTALL</button>
+                    </a>
+                    <a href="{{site.baseurl}}/join.html">
+                        <button class="btn-1">JOIN</button>
+                    </a>
                 </div>
             </section>            
         </div>
 
-        <div id="gnu">
-            <h1 class="headers"><a href="https://gnusocial.network/try/">_GNU</a></h1>
-            <nav class="navs-right">
-                <ul>
-                    <li><a href="">About GNU</a></li>
-                    <li><a href="">Philosophy</a></li>
-                    <li><a href="">Licenses</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Software</a></li>
-                    <li><a href="">Documentation</a></li>
-                    <li><a href="">Help GNU</a></li>
-                    <li><b><a href="">JOIN THE FSF</a></li></b>
-                </ul>
-            </nav>
-            <div style="clear: both;"></div>
-        </div>
+        <nav class="gnu"> 
+            <ul>
+                <li>
+                    <a href="#">
+                        <h1 style="display: inline;margin-right: 5px;">_GNU</h1>
+                        <h5 style="display: inline;">▼</h5>
+                    </a>
+                        <ul>
+                            <li><a href="https://gnu.org/gnu/gnu.html">About</a></li>
+                            <li><a href="https://gnu.org/philosophy/philosophy.html">Philosophy</a></li>
+                            <li><a href="https://gnu.org/licenses/licenses.html">Licenses</a></li>
+                            <li><a href="https://gnu.org/education/education.html">Education</a></li>
+                            <li><a href="https://gnu.org/software/software.html">Software</a></li>
+                            <li><a href="https://gnu.org/doc/doc.html">Documentation</a></li>
+                            <li><a href="https://gnu.org/help/help.html">Help GNU</a></li>
+                            <li><a href="https://www.fsf.org/associate/support_freedom"><b>JOIN THE FSF</b></a></li>
+                        </ul> 
+                </li>
+            </ul>
+        </nav>
 
-        <div id="content">
             {{content}}
-        </div>
+
     </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 # GNU social landing page
-## A simple landing page for GNU social
+## A clean, modern and fast landing page for GNU social v2
 Made as a proof of competence for GSoC 2020
 
 ## Features
